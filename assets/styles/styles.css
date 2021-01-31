@@ -1,23 +1,23 @@
 @-webkit-keyframes landing-background-anim {
   0% {
-    background-position: 0% 29%;
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 72%;
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 29%;
+    background-position: 0% 50%;
   }
 }
 @keyframes landing-background-anim {
   0% {
-    background-position: 0% 29%;
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 72%;
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 29%;
+    background-position: 0% 50%;
   }
 }
 h1 {
@@ -32,6 +32,12 @@ h2 {
   font-weight: normal;
   letter-spacing: -0.045em;
   transition: font-size 0.5s ease;
+}
+
+h3 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  letter-spacing: -0.045em;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -52,13 +58,15 @@ h2 {
     font-size: 2rem;
   }
 }
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  background-color: #F4F5F6;
+  background-color: #f4f5f6;
   color: #454851;
   font-family: Infra, sans-serif;
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -66,13 +74,17 @@ html, body {
   box-sizing: border-box;
 }
 
+section {
+  padding: 9.7% 13.8% 9.7% 13.8%;
+}
+
 .landing {
   height: 100vh;
   width: auto;
-  padding: 9.7% 13.8% 9.7% 13.8%;
   background: linear-gradient(141deg, #6764a3, #4f9fb3);
-  -webkit-animation: landing-background-anim 36s ease infinite;
-          animation: landing-background-anim 36s ease infinite;
+  background-size: 400% 400%;
+  -webkit-animation: landing-background-anim 30s ease infinite;
+          animation: landing-background-anim 30s ease infinite;
 }
 .landing main {
   height: 100%;
@@ -90,7 +102,7 @@ html, body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  color: #F4F5F6;
+  color: #f4f5f6;
 }
 
 .landing__button {
@@ -100,7 +112,7 @@ html, body {
   height: 17vh;
   max-height: 177px;
   margin-top: 3%;
-  background: #CCDEE2;
+  background: #ccdee2;
   border: 5px solid #454851;
   box-sizing: border-box;
   box-shadow: 10px 10px 0px #454851;
@@ -122,4 +134,37 @@ html, body {
   h2 {
     font-size: 2rem;
   }
+}
+.jobs {
+  height: 100vh;
+}
+
+.jobs__img-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.jobs__img-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 91.63%;
+}
+
+.jobs__middle-row {
+  position: relative;
+  left: 8.37%;
+}
+
+.jobs__img-container {
+  height: 17.36vw;
+  width: 17.36vw;
+  border: 5px solid #454851;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 0px #454851;
+  margin-top: 70px;
+  transition: 0.5s ease;
+}
+.jobs__img-container:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=styles.css.map */

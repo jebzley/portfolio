@@ -1,0 +1,32 @@
+.jobs {
+  height: 100vh;
+}
+
+.jobs__img-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.jobs__img-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 91.63%;
+}
+
+.jobs__middle-row {
+  position: relative;
+  left: 8.37%;
+}
+.jobs__img-container {
+  height: 17.36vw;
+  width: 17.36vw;
+  border: 5px solid #454851;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 0px #454851;
+  margin-top: 70px;
+  transition: 0.5s ease;
+  &:hover {
+    transform: scale(1.2);
+  }
+}

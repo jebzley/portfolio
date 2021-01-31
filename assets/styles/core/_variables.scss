@@ -1,9 +1,15 @@
-$white: #F4F5F6;
+$white: #f4f5f6;
 $black: #454851;
-$purple: #6764A3;
+$purple: #6764a3;
 
 @keyframes landing-background-anim {
-  0%{background-position:0% 29%}
-  50%{background-position:100% 72%}
-  100%{background-position:0% 29%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
