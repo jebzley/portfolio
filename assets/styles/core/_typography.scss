@@ -1,0 +1,42 @@
+$default-font-family: Infra, sans-serif;
+$h1-size: 9rem;
+$h1-size-tablet: 6rem;
+$h1-size-mobile: 4rem;
+$h2-size: 5rem;
+$h2-size-tablet: 3rem;
+$h2-size-mobile: 2rem;
+
+h1 {
+  font-size: $h1-size;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  transition: font-size 0.5s ease;
+}
+
+h2 {
+  font-size: $h2-size;
+  font-weight: normal;
+  letter-spacing: -0.045em;
+  transition: font-size 0.5s ease;
+}
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: $h1-size-tablet;
+  }
+  h2{
+    font-size: $h2-size-tablet;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  h1 {
+    font-size: $h1-size-mobile;
+  }
+  h2{
+    font-size: $h2-size-mobile;
+  }
+}
+
+
+

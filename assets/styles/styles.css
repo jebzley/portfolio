@@ -1,0 +1,125 @@
+@-webkit-keyframes landing-background-anim {
+  0% {
+    background-position: 0% 29%;
+  }
+  50% {
+    background-position: 100% 72%;
+  }
+  100% {
+    background-position: 0% 29%;
+  }
+}
+@keyframes landing-background-anim {
+  0% {
+    background-position: 0% 29%;
+  }
+  50% {
+    background-position: 100% 72%;
+  }
+  100% {
+    background-position: 0% 29%;
+  }
+}
+h1 {
+  font-size: 9rem;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  transition: font-size 0.5s ease;
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: normal;
+  letter-spacing: -0.045em;
+  transition: font-size 0.5s ease;
+}
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 415px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #F4F5F6;
+  color: #454851;
+  font-family: Infra, sans-serif;
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.landing {
+  height: 100vh;
+  width: auto;
+  padding: 9.7% 13.8% 9.7% 13.8%;
+  background: linear-gradient(141deg, #6764a3, #4f9fb3);
+  -webkit-animation: landing-background-anim 36s ease infinite;
+          animation: landing-background-anim 36s ease infinite;
+}
+.landing main {
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landing__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #F4F5F6;
+}
+
+.landing__button {
+  width: 36vw;
+  min-width: 300px;
+  max-width: 527px;
+  height: 17vh;
+  max-height: 177px;
+  margin-top: 3%;
+  background: #CCDEE2;
+  border: 5px solid #454851;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 0px #454851;
+  border-radius: 88.5px;
+  color: #454851;
+  font-size: 5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .landing__button {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .landing__button {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
