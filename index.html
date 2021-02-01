@@ -7,21 +7,27 @@
     <title>Seb Lee</title>
   </head>
   <body>
-    <section class="landing">
-      <main>
-        <div class="landing__content">
-          <div class="landing__text">
-            <h1>Hi, I'm Seb.</h1>
-            <h2>
-              I'm a software developer from Bristol, and I'm looking for work.
-            </h2>
+    <div class="landing-and-scroll-area">
+      <section class="landing">
+        <main>
+          <div class="landing__content">
+            <div class="landing__text">
+              <h1>Hi, I'm Seb.</h1>
+              <h2>
+                I'm a software developer from Bristol, and I'm looking for work.
+              </h2>
+            </div>
+            <button class="landing__button" onclick="location.href='#jobs'">
+              Have a look!
+            </button>
           </div>
-          <button class="landing__button" onclick="location.href='#jobs'">
-            Have a look!
-          </button>
-        </div>
-      </main>
-    </section>
+        </main>
+      </section>
+  
+      <section class="scroll-section">
+        <div class=scroll-section__overlay></div>
+      </section>
+    </div>
 
     <section class="jobs" id="jobs">
       <header class="title jobs__title">
