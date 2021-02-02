@@ -27,6 +27,11 @@ h3 {
   letter-spacing: -0.045em;
 }
 
+p{
+  font-size: 48px;
+  line-height: 1.6;
+  letter-spacing: -0.045em;
+}
 @media only screen and (max-width: 1000px) {
   h1 {
     font-size: $h1-size-tablet;
@@ -44,3 +49,4 @@ h3 {
     font-size: $h2-size-mobile;
   }
 }
+

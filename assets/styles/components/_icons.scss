@@ -1,0 +1,24 @@
+.icon {
+  margin: 20px;
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  font-style: none;
+  a{
+    text-decoration-color: $black;
+    color: $black;
+    i{
+      text-decoration-color: $black;
+      fill: $black;
+    }
+  }
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  i {
+    font-size: 40px;
+    fill: $black;
+  }
+}

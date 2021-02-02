@@ -1,0 +1,27 @@
+.about__picture{
+  
+  width: 523px;
+
+}
+.picture-of-me{
+  width: 523px;
+  height: 523px;
+  @include image-format;
+
+}
+.about__icons{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.about__main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.about__description{
+  margin: 0; padding: 0;
+}
