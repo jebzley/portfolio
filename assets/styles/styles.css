@@ -202,6 +202,7 @@ main {
 .landing {
   height: 100vh;
   width: auto;
+  scroll-snap-align: start;
 }
 .landing main {
   padding: 0;
