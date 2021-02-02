@@ -1,11 +1,7 @@
-#testy{
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-}
 .jobs {
+  scroll-snap-align: start;
   min-height: 100%;
+  color: $blue;
   .jobs__content{
    height: 100%;
   }
@@ -19,7 +15,7 @@
 }
 
 .jobs__img-container {
-  @include image-format;
+  @include image-format($blue);
   height: 17.36vw;
   width: 17.36vw;
   transition: 0.5s ease;

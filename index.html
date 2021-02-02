@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/styles/styles.css" />
     <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="https://kit.fontawesome.com/dc3acc3b3d.js" crossorigin="anonymous"></script>
     <title>Seb Lee</title>
   </head>
   <body>
@@ -58,23 +59,87 @@
         <div class="about__picture">
           <div class="picture-of-me"></div>
           <div class="about__icons">
+            <!-- fix label spacing -->
+
             <div class="icon">
-              <a href="https://github.com/jebzley"><i class="ph-github-logo-bold"></i></a>
+              <a href="https://github.com/jebzley"
+                ><i class="ph-github-logo-bold"></i
+              ></a>
+              <label>github</label>
             </div>
+
             <div class="icon">
               <i class="ph-linkedin-logo-bold"></i>
+              <label>linkedin</label>
             </div>
+
             <div class="icon">
               <i class="ph-twitter-logo-bold"></i>
+              <label>twitter</label>
             </div>
           </div>
-
         </div>
         <div class="about__description">
           <p>
             Modi sit sed illo. Fugiat sunt fuga non optio. Aspernatur saepe
             exercitationem animi est dolor ut ut. Sequi eum dicta veritatis cum.
           </p>
+        </div>
+      </main>
+    </section>
+
+    <section id="stack">
+      <header class="title stack__title">
+        <h3>Education & Skills</h3>
+      </header>
+      <main class="stack__main">
+
+        <div class="accordion stack__accordion">
+          <button class="accordion-button stack__accordion-button">_nology</button>
+          <div class="accordion-panel stack__accordion-panel">
+            <p>A 12 week course full of cool dudes</p>
+          </div>
+
+          <button class="accordion-button stack__accordion-button">dBS</button>
+          <div class="accordion-panel stack__accordion-panel">
+            <p>Masters in Sound for Games and Apps</p>
+          </div>
+
+          <button class="accordion-button stack__accordion-button">UWE</button>
+          <div class="accordion-panel stack__accordion-panel">
+            <p>Music Technology Bad Bwoy</p>
+          </div>
+
+          <script>
+            var accordion = document.getElementsByClassName("accordion-button");
+            for(var i = 0; i < accordion.length; i++)
+            {
+              accordion[i].addEventListener("click", function(){
+                this.classList.toggle("active");
+  
+                var panel = this.nextElementSibling;
+                if(panel.style.display === "block"){
+                  panel.style.display = "none";
+                } else{panel.style.display = "block";}
+              });
+            }
+          </script>
+
+        </div>
+        
+        
+
+        <div class="stack__grid">
+          <div class="icon stack__icon"><i class="fab fa-html5"></i></div>
+          <div class="icon stack__icon"><i class="fab fa-css3-alt"></i></div>
+          <div class="icon stack__icon"><i class="fab fa-sass"></i></div>
+          <div class="icon stack__icon"><i class="fab fa-js"></i></div>
+          <div class="icon stack__icon"><i class="fab fa-node-js"></i></div>
+          <div class="icon stack__icon"><i class="fab fa-bootstrap"></i></div>
+          <div class="icon stack__icon"><i class="fab fa-react"></i></div>
+          <div class="icon stack__icon"><i class="fab fa-python"></i></div>
+          <div class="icon stack__icon"><i class="fab fa-unity"></i></div>
+          <div class="icon stack__icon"><i class="far fa-smile"></i></i></div>
         </div>
       </main>
     </section>

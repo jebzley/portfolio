@@ -5,10 +5,11 @@
 
 @import "./core/layout";
 
+@import "./components/buttons";
 @import "./components/icons";
-
-@import "./components/icons";
+@import "./components/_accordion";
 
 @import "./pages/landing";
 @import "./pages/jobs";
 @import "./pages/about";
+@import "./pages/stack";

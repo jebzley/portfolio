@@ -1,0 +1,22 @@
+#stack{
+  height: 100%;
+  color: $green;
+  scroll-snap-align: start;
+}
+
+.stack__accordion{
+  padding-bottom: 70px;
+}
+
+.stack__grid{
+  display: grid;
+  width: 100%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.stack__icon{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}

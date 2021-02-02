@@ -41,33 +41,10 @@
   color: $white;
 }
 
-.landing__button {
-  width: 36vw;
-  min-width: 300px;
-  max-width: 527px;
-  height: 17vh;
-  max-height: 177px;
-  margin-top: 3%;
-  background: #00000000;
-  border: 5px solid $white;
-  box-sizing: border-box;
-  box-shadow: 10px 10px 0px $white;
-  border-radius: 88.5px;
-  color: $white;
-  font-size: $h3-size;
-}
-
-@media only screen and (max-width: 1000px) {
-  .landing__button {
-    font-size: $h2-size-tablet;
-  }
-}
-
 @media only screen and (max-width: 415px) {
-  .landing__button {
-    font-size: $h2-size-mobile;
-  }
   h2 {
     font-size: $h2-size-mobile;
   }
 }
+
+

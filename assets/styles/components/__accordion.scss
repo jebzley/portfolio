@@ -1,0 +1,26 @@
+.accordion-button{
+  margin-top: -5px;
+  width: 100%;
+  text-align: left;
+  background-color: $white;
+  border: 5px solid $green;
+  font-family: $default-font-family;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  padding: 10px;
+  color: $green;
+  &:active{
+    background-color: $green;
+    color: $white;
+  }
+}
+
+.accordion-panel{
+  padding: 10px;
+  display:none;
+  p{
+    font-size: 2rem;
+    letter-spacing: -0.045em;
+  }
+}

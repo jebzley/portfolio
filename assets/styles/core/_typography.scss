@@ -6,7 +6,10 @@ $h2-size: 5rem;
 $h2-size-tablet: 3rem;
 $h2-size-mobile: 2rem;
 $h3-size: 4.5rem;
-
+$p-size: 48px;
+html, body{
+  font-family: $default-font-family;
+}
 h1 {
   font-size: $h1-size;
   font-weight: 600;
@@ -28,11 +31,11 @@ h3 {
 }
 
 p{
-  font-size: 48px;
+  font-size: $p-size;
   line-height: 1.6;
   letter-spacing: -0.045em;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   h1 {
     font-size: $h1-size-tablet;
   }

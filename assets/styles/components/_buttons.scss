@@ -1,0 +1,42 @@
+.landing__button {
+  width: 36rem;
+  height: 10rem;
+  min-height: 10rem;
+  margin-top: 3%;
+  background: #00000000;
+  border: 5px solid $white;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 0px $white;
+  border-radius: 88.5px;
+  color: $white;
+  font-size: $h2-size;
+  &:hover{
+    cursor: pointer;
+  }
+  &:active {
+    transform: translateY(4px) translateX(4px);
+    box-shadow: 6px 6px 0px $white;
+  }
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+  .landing__button {
+    width: 20rem;
+    height: 8rem;
+    min-height: 8rem;
+
+    font-size: $h2-size-tablet;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .landing__button {
+    width: 15rem;
+    height: 6rem;
+    min-height: 6rem;
+    
+    font-size: $h2-size-mobile;
+  }
+}

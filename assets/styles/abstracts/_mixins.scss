@@ -1,5 +1,5 @@
-@mixin image-format{
-  border: 5px solid #454851;
+@mixin image-format($color){
+  border: 5px solid $color;
   box-sizing: border-box;
-  box-shadow: 10px 10px 0px #454851;
+  box-shadow: 10px 10px 0px $color;
 }

@@ -1,3 +1,10 @@
+#about{
+  color: $purple;
+  i{
+    color: $purple;
+  }
+  scroll-snap-align: start;
+}
 .about__picture{
   
   width: 523px;
@@ -6,7 +13,7 @@
 .picture-of-me{
   width: 523px;
   height: 523px;
-  @include image-format;
+  @include image-format($purple);
 
 }
 .about__icons{
@@ -20,6 +27,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
+}
+@media screen and (max-width: 1020px){
+  .about__main{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 .about__description{
