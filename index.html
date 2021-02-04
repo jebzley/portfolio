@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/styles/styles.css" />
     <script src="https://unpkg.com/phosphor-icons"></script>
-    <script src="https://kit.fontawesome.com/dc3acc3b3d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/dc3acc3b3d.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Seb Lee</title>
+    <script src="assets/scripts/navstyling.js" async defer></script>
   </head>
+
   <body>
     <div class="landing-and-scroll-area">
       <section class="landing">
@@ -30,6 +35,39 @@
         <div class="scroll-section__overlay"></div>
       </section>
     </div>
+
+    <button class="nav__element" id="open-button" onclick="openNav()">
+      &#9776;
+    </button>
+
+    <nav id="nav" class="nav">
+      <a
+        href="javascript:void(0)"
+        class="nav__element"
+        id="nav-exit"
+        onclick="closeNav()"
+        >&times;</a
+      >
+      <a class="nav__element" id="nav-top" href="#top">Home</a>
+      <a class="nav__element" id="nav-jobs" href="#jobs">Jobs</a>
+      <a class="nav__element" id="nav-about" href="#about">About</a>
+      <a class="nav__element" id="nav-stack" href="#stack">Stack</a>
+    </nav>
+
+    <script>
+      function openNav() {
+        document.getElementById("nav").style.width = "500px";
+        document.getElementById("open-button").style.opacity = "0";
+      }
+
+      function closeNav() {
+        document.getElementById("nav").style.width = "0";
+        document.getElementById("open-button").style.opacity = "1";
+      }
+    </script>
+
+  <div class="color-trigger">
+    <div class="sticky-trigger" id="jobs-sticky"></div>
     <section class="jobs" id="jobs">
       <div class="jobs__content">
         <header class="title jobs__title">
@@ -37,111 +75,171 @@
         </header>
         <main>
           <div class="jobs__img-grid">
-            <div class="jobs__img-container"></div>
-            <div class="jobs__img-container"></div>
-            <div class="jobs__img-container"></div>
-            <div class="jobs__img-container"></div>
-            <div class="jobs__img-container"></div>
-            <div class="jobs__img-container"></div>
-            <div class="jobs__img-container"></div>
-            <div class="jobs__img-container"></div>
-            <div class="jobs__img-container"></div>
+            <div class="jobs__img-container">
+              <h4>A Little Jobby</h4>
+              <p>Look daddy! I have a little jobby!</p>
+            </div>
+            <div class="jobs__img-container">
+              <h4>A Little Jobby</h4>
+              <p>Look daddy! I have a little jobby!</p>
+            </div>
+            <div class="jobs__img-container">
+              <h4>A Little Jobby</h4>
+              <p>Look daddy! I have a little jobby!</p>
+            </div>
+            <div class="jobs__img-container">
+              <h4>A Little Jobby</h4>
+              <p>Look daddy! I have a little jobby!</p>
+            </div>
+            <div class="jobs__img-container">
+              <h4>A Little Jobby</h4>
+              <p>Look daddy! I have a little jobby!</p>
+            </div>
+            <div class="jobs__img-container">
+              <h4>A Little Jobby</h4>
+              <p>Look daddy! I have a little jobby!</p>
+            </div>
+            <div class="jobs__img-container">
+              <h4>A Little Jobby</h4>
+              <p>Look daddy! I have a little jobby!</p>
+            </div>
+            <div class="jobs__img-container">
+              <h4>A Little Jobby</h4>
+              <p>Look daddy! I have a little jobby!</p>
+            </div>
+            <div class="jobs__img-container">
+              <h4>A Little Jobby</h4>
+              <p>Look daddy! I have a little jobby!</p>
+            </div>
           </div>
         </main>
       </div>
     </section>
 
-    <section id="about">
-      <header class="title about__title">
-        <h3>About Me</h3>
-      </header>
-      <main class="about__main">
-        <div class="about__picture">
-          <div class="picture-of-me"></div>
-          <div class="about__icons">
-            <!-- fix label spacing -->
+  </div>
+    
+    <div class="color-trigger">
+      <div class="sticky-trigger" id="about-sticky"></div>
+      <section id="about">
+        <header class="title about__title">
+          <h3>About Me</h3>
+        </header>
+        <main class="about__main">
+          <div class="about__picture" id="about-picture">
+            <div class="picture-of-me"></div>
+            <div class="about__icons">
+              <!-- fix label spacing -->
 
-            <div class="icon">
-              <a href="https://github.com/jebzley"
-                ><i class="ph-github-logo-bold"></i
-              ></a>
-              <label>github</label>
+              <div class="icon">
+                <a href="https://github.com/jebzley"
+                  ><i class="ph-github-logo-bold"></i
+                ></a>
+                <label>github</label>
+              </div>
+
+              <div class="icon">
+                <i class="ph-linkedin-logo-bold"></i>
+                <label>linkedin</label>
+              </div>
+
+              <div class="icon">
+                <i class="ph-twitter-logo-bold"></i>
+                <label>twitter</label>
+              </div>
             </div>
-
-            <div class="icon">
-              <i class="ph-linkedin-logo-bold"></i>
-              <label>linkedin</label>
+          </div>
+          <div class="about__description">
+            <p>
+              Modi sit sed illo. Fugiat sunt fuga non optio. Aspernatur saepe
+              exercitationem animi est dolor ut ut. Sequi eum dicta veritatis
+              cum.
+            </p>
+          </div>
+        </main>
+      </section>
+    </div>
+    <div class="color-trigger">
+      <div class="sticky-trigger" id="stack-sticky"></div>
+      <section id="stack">
+        <header class="title stack__title">
+          <h3>Education & Skills</h3>
+        </header>
+        <main class="stack__main">
+          <div class="accordion stack__accordion">
+            <button class="accordion-button stack__accordion-button">
+              _nology
+            </button>
+            <div class="accordion-panel stack__accordion-panel">
+              <p>A 12 week course full of cool dudes</p>
             </div>
-
-            <div class="icon">
-              <i class="ph-twitter-logo-bold"></i>
-              <label>twitter</label>
-            </div>
-          </div>
-        </div>
-        <div class="about__description">
-          <p>
-            Modi sit sed illo. Fugiat sunt fuga non optio. Aspernatur saepe
-            exercitationem animi est dolor ut ut. Sequi eum dicta veritatis cum.
-          </p>
-        </div>
-      </main>
-    </section>
-
-    <section id="stack">
-      <header class="title stack__title">
-        <h3>Education & Skills</h3>
-      </header>
-      <main class="stack__main">
-
-        <div class="accordion stack__accordion">
-          <button class="accordion-button stack__accordion-button">_nology</button>
-          <div class="accordion-panel stack__accordion-panel">
-            <p>A 12 week course full of cool dudes</p>
-          </div>
-
-          <button class="accordion-button stack__accordion-button">dBS</button>
-          <div class="accordion-panel stack__accordion-panel">
-            <p>Masters in Sound for Games and Apps</p>
-          </div>
-
-          <button class="accordion-button stack__accordion-button">UWE</button>
-          <div class="accordion-panel stack__accordion-panel">
-            <p>Music Technology Bad Bwoy</p>
-          </div>
-
-          <script>
-            var accordion = document.getElementsByClassName("accordion-button");
-            for(var i = 0; i < accordion.length; i++)
-            {
-              accordion[i].addEventListener("click", function(){
-                this.classList.toggle("active");
   
-                var panel = this.nextElementSibling;
-                if(panel.style.display === "block"){
-                  panel.style.display = "none";
-                } else{panel.style.display = "block";}
-              });
-            }
-          </script>
+            <button class="accordion-button stack__accordion-button">dBS</button>
+            <div class="accordion-panel stack__accordion-panel">
+              <p>Masters in Sound for Games and Apps</p>
+            </div>
+  
+            <button class="accordion-button stack__accordion-button">UWE</button>
+            <div class="accordion-panel stack__accordion-panel">
+              <p>Music Technology Bad Bwoy</p>
+            </div>
+  
+            <script>
+              var accordion = document.getElementsByClassName("accordion-button");
+              for (var i = 0; i < accordion.length; i++) {
+                accordion[i].addEventListener("click", function () {
+                  this.classList.toggle("active");
+  
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                  } else {
+                    panel.style.display = "block";
+                  }
+                });
+              }
+            </script>
+          </div>
+  
+          <div class="stack__grid">
+            <div class="icon stack__icon" id="html5">
+              <i class="fab fa-html5"></i>
+            </div>
+            <div class="icon stack__icon" id="css3">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="icon stack__icon" id="sass">
+              <i class="fab fa-sass"></i>
+            </div>
+            <div class="icon stack__icon" id="javascript">
+              <i class="fab fa-js"></i>
+            </div>
+            <div class="icon stack__icon" id="node">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <div class="icon stack__icon" id="bootstrap">
+              <i class="fab fa-bootstrap"></i>
+            </div>
+            <div class="icon stack__icon" id="react">
+              <i class="fab fa-react"></i>
+            </div>
+            <div class="icon stack__icon" id="python">
+              <i class="fab fa-python"></i>
+            </div>
+            <div class="icon stack__icon" id="unity">
+              <i class="fab fa-unity"></i>
+            </div>
+            <div class="icon stack__icon" id="smiley">
+              <i class="far fa-smile"></i>
+            </div>
+          </div>
+        </main>
+      </section>
 
-        </div>
-        
-        
+    </div>
 
-        <div class="stack__grid">
-          <div class="icon stack__icon"><i class="fab fa-html5"></i></div>
-          <div class="icon stack__icon"><i class="fab fa-css3-alt"></i></div>
-          <div class="icon stack__icon"><i class="fab fa-sass"></i></div>
-          <div class="icon stack__icon"><i class="fab fa-js"></i></div>
-          <div class="icon stack__icon"><i class="fab fa-node-js"></i></div>
-          <div class="icon stack__icon"><i class="fab fa-bootstrap"></i></div>
-          <div class="icon stack__icon"><i class="fab fa-react"></i></div>
-          <div class="icon stack__icon"><i class="fab fa-python"></i></div>
-          <div class="icon stack__icon"><i class="fab fa-unity"></i></div>
-          <div class="icon stack__icon"><i class="far fa-smile"></i></i></div>
-        </div>
-      </main>
-    </section>
+    
+
+    
+    
   </body>
 </html>
