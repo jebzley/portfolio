@@ -1,52 +1,55 @@
-window.onscroll = () => console.log(pageYOffset);
-
 navColourChanger();
 
 function navColourChanger() {
-  
   const screenColliderJobs = document.getElementById("jobs-sticky");
   const screenColliderAbout = document.getElementById("about-sticky");
   const screenColliderStack = document.getElementById("stack-sticky");
-  
-    
-      //find jobs collider
-      let colliderCoordinatesJobs = screenColliderJobs.getBoundingClientRect();
-      let colliderOffsetTopJobs = colliderCoordinatesJobs.top + window.pageYOffset;
 
-      //find about collider
-      let colliderCoordinatesAbout = screenColliderAbout.getBoundingClientRect();
-      let colliderOffsetTopAbout = colliderCoordinatesAbout.top + window.pageYOffset;
+  //find jobs collider
+  let colliderCoordinatesJobs = screenColliderJobs.getBoundingClientRect();
+  let colliderOffsetTopJobs = colliderCoordinatesJobs.top + window.pageYOffset;
 
-      //find education collider
-      let colliderCoordinatesStack = screenColliderStack.getBoundingClientRect();
-      let colliderOffsetTopStack = colliderCoordinatesStack.top + window.pageYOffset;
+  //find about collider
+  let colliderCoordinatesAbout = screenColliderAbout.getBoundingClientRect();
+  let colliderOffsetTopAbout =
+    colliderCoordinatesAbout.top + window.pageYOffset;
 
-  window.onscroll = function () {
+  //find education collider
+  let colliderCoordinatesStack = screenColliderStack.getBoundingClientRect();
+  let colliderOffsetTopStack =
+    colliderCoordinatesStack.top + window.pageYOffset;
 
-
-    if (window.pageYOffset >= colliderOffsetTopJobs && window.pageYOffset <= colliderOffsetTopAbout) {
-
+  let poop = setInterval(function () {
+    if (
+      window.pageYOffset >= colliderOffsetTopJobs &&
+      window.pageYOffset <= colliderOffsetTopAbout
+    ) {
       document.getElementById("open-button").style.color = "#4f9fb3";
       document.getElementById("nav-top").style.color = "#4f9fb3";
       document.getElementById("nav-jobs").style.color = "#4f9fb3";
       document.getElementById("nav-stack").style.color = "#4f9fb3";
       document.getElementById("nav-about").style.color = "#4f9fb3";
       document.getElementById("nav-exit").style.color = "#4f9fb3";
-    } else if (window.pageYOffset >= colliderOffsetTopAbout && window.pageYOffset <= colliderOffsetTopStack) {
+    } else if (
+      window.pageYOffset >= colliderOffsetTopAbout &&
+      window.pageYOffset <= colliderOffsetTopStack
+    ) {
       document.getElementById("open-button").style.color = "#6764a3";
       document.getElementById("nav-top").style.color = "#6764a3";
       document.getElementById("nav-jobs").style.color = "#6764a3";
       document.getElementById("nav-stack").style.color = "#6764a3";
       document.getElementById("nav-about").style.color = "#6764a3";
       document.getElementById("nav-exit").style.color = "#6764a3";
-    } else if (window.pageYOffset >= colliderOffsetTopStack) {
+    } else if (window.pageYOffset >= colliderOffsetTopStack &&
+      window.pageYOffset >= colliderOffsetTopStack &&
+      window.pageYOffset >= colliderOffsetTopAbout) {
       document.getElementById("open-button").style.color = "#3FA34D";
       document.getElementById("nav-top").style.color = "#3FA34D";
       document.getElementById("nav-jobs").style.color = "#3FA34D";
       document.getElementById("nav-stack").style.color = "#3FA34D";
       document.getElementById("nav-about").style.color = "#3FA34D";
       document.getElementById("nav-exit").style.color = "#3FA34D";
-    } else{
+    } else {
       document.getElementById("open-button").style.color = "#f4f5f6";
       document.getElementById("nav-top").style.color = "#f4f5f6";
       document.getElementById("nav-jobs").style.color = "#f4f5f6";
@@ -54,7 +57,18 @@ function navColourChanger() {
       document.getElementById("nav-about").style.color = "#f4f5f6";
       document.getElementById("nav-exit").style.color = "#f4f5f6";
     }
+    console.log("why doesnt it work");
+  },1);
 
-  };
+  
 }
 
+function openNav() {
+  document.getElementById("nav").style.transform = "translateX(0)";
+  document.getElementById("open-button").style.transform = "translateX(-100px)";
+}
+
+function closeNav() {
+  document.getElementById("nav").style.transform = "translateY(-100px)";
+  document.getElementById("open-button").style.transform = "translateX(0)";
+}
