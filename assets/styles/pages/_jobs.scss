@@ -16,8 +16,8 @@
 
 .jobs__img-container {
   @include image-format($blue);
-  height: 400px;
-  width: 400px;
+  height: 20vw;
+  width: 20vw;
   transition: 0.5s ease;
   display: flex;
   flex-direction: column;
@@ -42,4 +42,27 @@
       opacity: 1;
     }
   }
+}
+
+@media only screen and (max-width: 415px) {
+  .jobs__img-grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    gap: 7vh;
+  }
+
+  .jobs__img-container {
+    width: 100%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    h4{
+      font-size: 2rem;
+    }
+    p{
+      opacity: 1;
+      font-size: 1rem;
+    }
+  }
+
 }

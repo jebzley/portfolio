@@ -31,7 +31,19 @@
 @media screen and (max-width: 1020px){
   .about__main{
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: auto;
+    gap: 7vh;
+    
+  }
+  .about__picture{
+    width: 100%;
+    height: auto;
+  }
+  .picture-of-me{
+    width: 100%;
+    height: auto;
+    padding-bottom: 100%;
   }
 }
 

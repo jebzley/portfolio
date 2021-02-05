@@ -19,9 +19,19 @@ body {
 
 section {
   padding: 9.7% 13.8% 9.7% 13.8%;
+  overflow: hidden;
 }
 
 main{
   padding-top: 70px;
 }
 
+@media only screen and(max-width: 415px){
+  section{
+    padding-top: 120px;
+  }
+  main{
+    padding-top: 10%;
+  }
+
+}

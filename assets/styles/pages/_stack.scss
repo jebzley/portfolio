@@ -36,3 +36,31 @@
   align-items: center;
   margin: 0;
 }
+
+@media only screen and (max-width: 415px){
+  #stack {
+    height: 100%;
+
+    main{
+      margin: 0;
+      padding: 0;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+  .stack__grid{
+    margin: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .stack__icon{
+    i{
+      font-size: 2.7rem;
+    }
+  }
+  .stack__accordion{
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+
+  }
+}
+

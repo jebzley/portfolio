@@ -1,9 +1,8 @@
 #nav-container{
   position: fixed;
-  height: 100vh;
-  top: 2px;
-  bottom: 2px;
-  left:2px;
+  height: 90px;
+  top: 0;
+  left: 0;
   
   z-index: 1;
 }
@@ -13,7 +12,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 90px;
+  height: 80px;
   width: 500px;
   transform: translateY(-100px);
   background-color: transparent;
