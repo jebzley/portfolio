@@ -19,7 +19,8 @@ function navColourChanger() {
   let colliderOffsetTopStack =
     colliderCoordinatesStack.top + window.pageYOffset;
 
-  let poop = setInterval(function () {
+  //check every 1ms which section's collider is touching top of screen
+  let colliderChecker = setInterval(function () {
     if (
       window.pageYOffset >= colliderOffsetTopJobs &&
       window.pageYOffset <= colliderOffsetTopAbout
@@ -57,7 +58,6 @@ function navColourChanger() {
       document.getElementById("nav-about").style.color = "#f4f5f6";
       document.getElementById("nav-exit").style.color = "#f4f5f6";
     }
-    console.log("why doesnt it work");
   },1);
 
   
@@ -65,10 +65,10 @@ function navColourChanger() {
 
 function openNav() {
   document.getElementById("nav").style.transform = "translateX(0)";
-  document.getElementById("open-button").style.transform = "translateX(-100px)";
+  document.getElementById("open-button").style.transform = "translateY(-100px)";
 }
 
 function closeNav() {
-  document.getElementById("nav").style.transform = "translateY(-100px)";
+  document.getElementById("nav").style.transform = "translateX(-100%)";
   document.getElementById("open-button").style.transform = "translateX(0)";
 }

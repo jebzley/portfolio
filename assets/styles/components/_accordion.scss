@@ -22,21 +22,19 @@
 }
 
 .accordion-panel{
-  padding: 10px;
-  display:none;
-  p{
-    font-size: 2rem;
-    letter-spacing: -0.045em;
+  padding: 0px;
+  line-height: 1.5;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+  ul{
+    font-size: 1.5rem;
+    padding: 1.5rem;
   }
 }
 
 @media only screen and(max-width: 415px){
   .accordion-button{
     font-size: 1.5rem;
-  }
-  .accordion-panel{
-    p{
-      font-size: 1.2rem;
-    }
   }
 }

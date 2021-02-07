@@ -1,5 +1,6 @@
 #stack{
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   color: $green;
   scroll-snap-align: start;
   main{
@@ -19,6 +20,7 @@
   margin-top: -5px;
   display: grid;
   width: 100%;
+  height: 70vh;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr ;
 }
