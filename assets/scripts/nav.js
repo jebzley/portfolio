@@ -21,6 +21,7 @@ function navColourChanger() {
 
   //check every 1ms which section's collider is touching top of screen
   let colliderChecker = setInterval(function () {
+    //change the styling of the navbar depending on which collider is touching
     if (
       window.pageYOffset >= colliderOffsetTopJobs &&
       window.pageYOffset <= colliderOffsetTopAbout
@@ -31,6 +32,7 @@ function navColourChanger() {
       document.getElementById("nav-stack").style.color = "#4f9fb3";
       document.getElementById("nav-about").style.color = "#4f9fb3";
       document.getElementById("nav-exit").style.color = "#4f9fb3";
+      document.getElementById("nav").style.backgroundColor = "#f4f5f6";
     } else if (
       window.pageYOffset >= colliderOffsetTopAbout &&
       window.pageYOffset <= colliderOffsetTopStack
@@ -57,10 +59,10 @@ function navColourChanger() {
       document.getElementById("nav-stack").style.color = "#f4f5f6";
       document.getElementById("nav-about").style.color = "#f4f5f6";
       document.getElementById("nav-exit").style.color = "#f4f5f6";
+      document.getElementById("nav").style.backgroundColor = "transparent";
     }
   },1);
 
-  
 }
 
 function openNav() {

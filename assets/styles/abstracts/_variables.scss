@@ -5,13 +5,7 @@ $blue: #4f9fb3;
 $green: #3FA34D;
 
 @keyframes landing-background-anim {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0%{background-position:0% 83%}
+    50%{background-position:100% 18%}
+    100%{background-position:0% 83%}
 }

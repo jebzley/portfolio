@@ -5,6 +5,10 @@
   .jobs__content{
    height: 100%;
   }
+  a{
+    text-decoration: none;
+    color: $blue;
+  }
 }
 
 .jobs__img-grid {

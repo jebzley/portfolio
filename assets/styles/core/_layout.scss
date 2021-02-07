@@ -26,17 +26,39 @@ main{
   padding-top: 70px;
 }
 
+.big-picture{
+  width: 523px;
+  height: 523px;
+}
+.picture-content{
+  width: 100%;
+  height: 100%;
+}
 @media only screen and(max-width: 768px){
   main{
     padding-top: 2rem;
   }
+  .big-picture{
+    width: auto;
+    height: auto;
+  }
+    .picture-content{
+      width: 100%;
+      height: 100%;
+      padding-bottom: 100%;
+    }
 }
 @media only screen and(max-width: 415px){
   section{
-    padding-top: 120px;
+    padding-top: 80px;
   }
   main{
     padding-top: 10%;
+  }
+  .picture-content{
+    width: 100%;
+    height: auto;
+    padding-bottom: 100%;
   }
 
 }
