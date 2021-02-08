@@ -4,13 +4,14 @@
     color: $purple;
   }
   scroll-snap-align: start;
+  a{
+    text-decoration: none;
+  }
 }
-.about__picture{
-}
-
 .picture-of-me{
   
   @include image-format($purple);
+  background-image: url(/assets/img/bg-purple.png);
 }
 .icon-section{
   width: 100%;

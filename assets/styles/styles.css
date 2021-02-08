@@ -59,6 +59,10 @@ p {
   p {
     font-size: 1.2rem;
   }
+
+  h4 {
+    font-size: 1.7rem;
+  }
 }
 @-webkit-keyframes landing-background-anim {
   0% {
@@ -93,8 +97,8 @@ body {
   font-family: Infra, sans-serif;
   font-size: 100%;
   scroll-behavior: smooth;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
 }
 
 * {
@@ -157,13 +161,15 @@ main {
   height: 10rem;
   min-height: 10rem;
   margin-top: 3%;
-  background: #00000000;
-  border: 5px solid #f4f5f6;
+  background: transparent;
+  background-color: transparent;
+  border: 3px solid #f4f5f6;
   box-sizing: border-box;
   box-shadow: 10px 10px 0px #f4f5f6;
   border-radius: 88.5px;
   color: #f4f5f6;
   font-size: 4rem;
+  letter-spacing: -0.045em;
 }
 .landing__button:hover {
   cursor: pointer;
@@ -319,8 +325,7 @@ main {
   margin-top: -5px;
   width: 100%;
   text-align: left;
-  background-color: #f4f5f6;
-  border: 5px solid #3FA34D;
+  border: 3px solid #3FA34D;
   font-family: Infra, sans-serif;
   font-size: 2.2rem;
   font-weight: 600;
@@ -445,7 +450,7 @@ main {
 }
 
 .jobs__img-container {
-  border: 5px solid #4f9fb3;
+  border: 3px solid #4f9fb3;
   box-sizing: border-box;
   box-shadow: 10px 10px 0px #4f9fb3;
   height: 20vw;
@@ -533,11 +538,15 @@ main {
 #about i {
   color: #6764a3;
 }
+#about a {
+  text-decoration: none;
+}
 
 .picture-of-me {
-  border: 5px solid #6764a3;
+  border: 3px solid #6764a3;
   box-sizing: border-box;
   box-shadow: 10px 10px 0px #6764a3;
+  background-image: url(/assets/img/bg-purple.png);
 }
 
 .icon-section {
@@ -672,14 +681,17 @@ main {
 }
 
 .article__content-picture {
-  border: 5px solid #f4f5f6;
+  border: 3px solid #454851;
   box-sizing: border-box;
-  box-shadow: 10px 10px 0px #f4f5f6;
+  box-shadow: 10px 10px 0px #454851;
+  background-image: url(/assets/img/btn-bg-02.png);
 }
 
 .article__description {
   grid-column: 2/2;
   overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #f4f5f6 #3FA34D;
 }
 
 @media only screen and (max-width: 768px) {

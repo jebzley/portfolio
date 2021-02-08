@@ -3,13 +3,15 @@
   height: 10rem;
   min-height: 10rem;
   margin-top: 3%;
-  background: #00000000;
-  border: 5px solid $white;
+  background: transparent;
+  background-color: transparent;
+  border: 3px solid $white;
   box-sizing: border-box;
   box-shadow: 10px 10px 0px $white;
   border-radius: 88.5px;
   color: $white;
   font-size: $h2-size;
+  letter-spacing: -0.045em;
   &:hover{
     cursor: pointer;
   }
