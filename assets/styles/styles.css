@@ -337,7 +337,7 @@ h3 {
   margin-top: -5px;
   width: 100%;
   text-align: left;
-  background-image: url(/assets/img/bg-green.png);
+  background-image: url(../img/bg-green.png);
   border: 3px solid #3FA34D;
   box-sizing: border-box;
   box-shadow: 10px 10px 0px #3FA34D;
@@ -461,7 +461,7 @@ h3 {
 }
 
 .jobs__img-grid {
-  background-image: url(/assets/img/bg-blue.png);
+  background-image: url(../img/bg-blue.png);
   border: 3px solid #4f9fb3;
   box-sizing: border-box;
   box-shadow: 10px 10px 0px #4f9fb3;
@@ -610,7 +610,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
-  background-image: url(/assets/img/bg-purple.png);
+  background-image: url(../img/bg-purple.png);
   border: 3px solid #6764a3;
   box-sizing: border-box;
   box-shadow: 10px 10px 0px #6764a3;
@@ -753,7 +753,7 @@ h3 {
   border: 3px solid #454851;
   box-sizing: border-box;
   box-shadow: 10px 10px 0px #454851;
-  background-image: url(/assets/img/btn-bg-02.png);
+  background-image: url(../img/btn-bg-02.png);
 }
 
 .article__description {

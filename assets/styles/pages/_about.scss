@@ -28,7 +28,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
-  background-image: url(/assets/img/bg-purple.png);
+  background-image: url(../img/bg-purple.png);
   @include image-format($purple);
   padding: 3vw;
   color: $black;

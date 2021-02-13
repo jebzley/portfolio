@@ -46,7 +46,7 @@
 
 .article__content-picture{
   @include image-format($black);
-  background-image: url(/assets/img/btn-bg-02.png);
+  background-image: url(../img/btn-bg-02.png);
 }
 
 .article__description{
