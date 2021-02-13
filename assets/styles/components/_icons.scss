@@ -33,3 +33,16 @@
   }
   
 }
+
+@media only screen and (max-width: 415px){
+  .icon {
+    i{
+    font-size: 30px;
+  }
+  label{
+    font-size: 0.5rem;
+  }
+
+  }
+  
+}

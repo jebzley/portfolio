@@ -1,7 +1,7 @@
 #about{
   color: $purple;
   i{
-    color: $purple;
+    color: $black;
   }
   scroll-snap-align: start;
   a{
@@ -10,8 +10,8 @@
 }
 .picture-of-me{
   
-  @include image-format($purple);
-  background-image: url(/assets/img/bg-purple.png);
+  @include image-format($black);
+  background-color: $white;
 }
 .icon-section{
   width: 100%;
@@ -20,23 +20,41 @@
   justify-content: space-evenly;
   
 }
+
+.about__description{
+  margin: 0; padding: 0;
+}
 .about__main{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
+  background-image: url(/assets/img/bg-purple.png);
+  @include image-format($purple);
+  padding: 3vw;
+  color: $black;
 }
 @media screen and (max-width: 768px){
   .about__main{
-    grid-template-columns: 1fr;
+    display: block;
     width: 100%;
     height: auto;
-    gap: 7vh;
     
   }
 
 }
 
-.about__description{
-  margin: 0; padding: 0;
+@media only screen and (max-width: 415px){
+  .about__main{
+    @include image-format-mobile($purple);
+  }
+
+  .picture-of-me{
+    @include image-format-mobile($black);
+  }
+
+  .about__description{
+    margin-top: 7vw;
+  }
 }
+
 

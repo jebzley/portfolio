@@ -21,9 +21,8 @@ section {
   padding: 7% 13.8% 9.7% 13.8%;
   overflow: hidden;
 }
-
-main{
-  padding-top: 70px;
+h3{
+  padding-bottom: 70px;
 }
 
 .big-picture{
@@ -51,6 +50,9 @@ main{
 @media only screen and(max-width: 415px){
   section{
     padding-top: 80px;
+  }
+  h3{
+    padding-bottom: 3vw;
   }
   main{
     padding-top: 10%;

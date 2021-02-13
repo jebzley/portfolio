@@ -2,7 +2,8 @@
   margin-top: -5px;
   width: 100%;
   text-align: left;
-  border: 3px solid $green;
+  background-image: url(/assets/img/bg-green.png);
+  @include image-format($green);
   font-family: $default-font-family;
   font-size: 2.2rem;
   font-weight: 600;
@@ -34,6 +35,7 @@
 
 @media only screen and(max-width: 415px){
   .accordion-button{
+    @include image-format-mobile($green);
     font-size: 1.5rem;
   }
   .accordion-panel{
